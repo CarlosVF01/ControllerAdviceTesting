@@ -10,8 +10,12 @@ public interface IEmployeeService {
 
 	List<EmployeeDto> getAllEmployees();
 
-	EmployeeDto getEmpById(Long empidL);
+	EmployeeDto getEmployeeById(Long empidL);
 
-	ResponseEntity<String> deleteEmpById(Long empidL);
+	ResponseEntity<String> deleteEmployeeById(Long empidL);
+
+	List<EmployeeDto> getEmployeesWithAgeGreaterThan(int age);
+
+	ResponseEntity<String> updateEmployee(Long empidL, EmployeeDto employeeDto);
 
 }

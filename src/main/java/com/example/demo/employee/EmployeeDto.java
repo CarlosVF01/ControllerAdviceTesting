@@ -1,12 +1,13 @@
 package com.example.demo.employee;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeeDto {
     private String name;
+    private int age;
 }
